@@ -1,0 +1,35 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "quotemark": [
+      "single",
+      "avoid-escape"
+    ],
+    "no-conditional-assignment": false,
+    "no-unused-variable": [
+      true
+    ],
+    "no-var-requires": false,
+    "object-literal-sort-keys": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case",
+      "allow-leading-underscore",
+      "allow-trailing-underscore"
+    ],
+    "max-line-length": [
+      true,
+      240
+    ],
+    "ordered-imports": [
+      false
+    ]
+  },
+  "rulesDirectory": []
+}
