@@ -4,6 +4,8 @@ html(lang='en')
     meta(charset='utf-8')
     title= StackState
     meta(name='viewport' content='width=device-width, initial-scale=1')
+    each css in Array.from(new Set(htmlWebpackPlugin.files.css.values))
+      link(href=css rel='stylesheet')
   body
     div(id="app")
     each chunk in Array.from(new Set(htmlWebpackPlugin.files.chunks.values))
