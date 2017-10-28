@@ -2,9 +2,9 @@ import './styles/app.scss';
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Skeleton } from './Skeleton';
+import { Selection } from './Selection';
 
 ReactDOM.render(
-  <Skeleton />,
+  <Selection />,
   document.getElementById('app'),
 );
