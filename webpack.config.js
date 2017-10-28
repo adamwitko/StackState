@@ -3,7 +3,7 @@ const path = require("path");
 const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 module.exports = {
   entry: ['./src/app.tsx'],
 
@@ -50,12 +50,17 @@ module.exports = {
               })]
             }
           }
-        }]
+        }, 'sass-loader']
       })
     }]
   },
 
   plugins: [
+    new CleanWebpackPlugin(['build'], {
+      root: __dirname,
+      verbose: true,
+      dry: false
+    }),
     new HtmlWebpackPlugin({
       template: '!!pug-loader!src/index.pug',
       mobile: true,
