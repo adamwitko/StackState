@@ -33,6 +33,6 @@
     "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
-    "file-loader": "^1.1.5"
+    "file-loader": "^1.1.7"
   }
 }
